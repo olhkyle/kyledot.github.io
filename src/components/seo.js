@@ -39,6 +39,7 @@ const Seo = ({ description, title, children }) => {
 			<meta name="linkedin:creator" content={site.siteMetadata?.social?.linkedin || ``} />
 			<meta name="linkedin:title" content={title} />
 			<meta name="linkedin:description" content={metaDescription} />
+			<meta name="google-site-verification" content="QqtJyrtBQngvT--l7EEiKSi6MQp1_qz1s_3gzHqiIRk" />
 			<link rel="shortcut icon" href="../static/favicon.ico" />
 			<link rel="icon" href="../static/favicon.ico" />
 			{children}
