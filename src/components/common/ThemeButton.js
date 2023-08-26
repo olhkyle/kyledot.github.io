@@ -6,10 +6,6 @@ import './ThemeButton.css';
 const ThemeButton = () => {
 	const [theme, toggleTheme] = useTheme();
 
-	React.useEffect(() => {
-		document.body.dataset.theme = theme;
-	}, [theme]);
-
 	return (
 		<div className="container" onClick={toggleTheme}>
 			<div className="switch ring-4 ring-blue-primary" />

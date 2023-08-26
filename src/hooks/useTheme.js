@@ -9,6 +9,10 @@ const useTheme = () => {
 
 	const [theme, setTheme] = React.useState(initializeTheme);
 
+	React.useEffect(() => {
+		document.body.dataset.theme = theme;
+	}, [theme]);
+
 	const toggleTheme = () => {
 		const darkQuery = theme === 'light' ? 'dark' : 'light';
 
