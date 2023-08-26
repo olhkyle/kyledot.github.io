@@ -3,27 +3,36 @@
  *
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/
  */
-import React from 'react';
+import * as React from 'react';
 
 /**
  * @type {import('gatsby').GatsbySSR['onRenderBody']}
  */
-exports.onRenderBody = ({ setHtmlAttributes }) => {
-	setHtmlAttributes({ lang: `en` });
-};
+exports.onRenderBody = ({ setHtmlAttributes, setPreBodyComponents }) => {
+	const script = `
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const savedTheme = localStorage.getItem('theme');
 
-exports.replaceRenderer = ({ setPreBodyComponents }) => {
-	setPreBodyComponents([
-		React.createElement('script', {
-			key: 'darkmode',
-			dangerouslySetInnerHTML: {
-				__html: `
-        (function () {
-          // 다크모드 여부에 따라 document.body.dataset.theme 값을 토글
-          document.body.dataset.theme = localStorage.getItem('theme');
-        })();
-        `,
-			},
-		}),
-	]);
+    const theme = savedTheme ?? (isDark.matches ? 'dark' : 'light');
+
+    const setTheme = (newTheme) => {
+      if (newTheme === 'dark') {
+        document.body.dataset.theme = 'dark';
+      } else {
+        document.body.dataset.theme = 'light';
+      }
+
+      localStorage.setItem('theme', newTheme);
+    };
+
+    isDark.addListener((e) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    });
+
+    setTheme(theme);
+  `;
+
+	setHtmlAttributes({ lang: `en` });
+
+	setPreBodyComponents(<script dangerouslySetInnerHTML={{ __html: script }} />);
 };

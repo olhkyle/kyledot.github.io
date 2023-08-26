@@ -10,10 +10,10 @@ const useTheme = () => {
 	const [theme, setTheme] = React.useState(initializeTheme);
 
 	const toggleTheme = () => {
-		setTheme(theme => {
-			return theme === 'light' ? 'dark' : 'light';
-		});
-		localStorage.setItem('theme', theme === 'light' ? 'dark' : 'light');
+		const darkQuery = theme === 'light' ? 'dark' : 'light';
+
+		setTheme(theme => darkQuery);
+		localStorage.setItem('theme', darkQuery);
 	};
 
 	return [theme, toggleTheme];
