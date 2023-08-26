@@ -30,9 +30,9 @@ const Seo = ({ description, title, children }) => {
 
 	return (
 		<>
-			<title>{title}</title>
+			<title>{defaultTitle + ' — A blog by Kyle Kwon'}</title>
 			<meta name="description" content={metaDescription} />
-			<meta property="og:title" content={title} />
+			<meta property="og:title" content={defaultTitle} />
 			<meta property="og:description" content={metaDescription} />
 			<meta property="og:type" content="website" />
 			<meta name="linkedin:card" content="summary" />
