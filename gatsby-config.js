@@ -26,6 +26,31 @@ module.exports = {
 	},
 	pathPrefix: '/',
 	plugins: [
+		{
+			resolve: 'gatsby-plugin-google-gtag',
+			options: {
+				trackingIds: ['G-5PK419H7M5'],
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-sitemap',
+			options: {
+				output: '/',
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://olhkyle.github.io/',
+				sitemap: 'https://olhkyle.github.io/sitemap-index.xml',
+				policy: [
+					{
+						userAgent: '*',
+						allow: '/',
+					},
+				],
+			},
+		},
 		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-source-filesystem`,
@@ -125,31 +150,6 @@ module.exports = {
 				display: `minimal-ui`,
 				icon: `src/images/space-person.png`, // This path is relative to the root of the site.
 				theme_color_in_head: false,
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-google-gtag',
-			options: {
-				trackingIds: ['G-5PK419H7M5'],
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-sitemap',
-			options: {
-				output: '/',
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-robots-txt',
-			options: {
-				host: 'https://olhkyle.github.io/',
-				sitemap: 'https://olhkyle.github.io/sitemap-0.xml',
-				policy: [
-					{
-						userAgent: '*',
-						allow: '/',
-					},
-				],
 			},
 		},
 	],
