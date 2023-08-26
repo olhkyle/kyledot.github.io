@@ -4,6 +4,10 @@
  * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
  */
 
+require('dotenv').config({
+	path: `.env.${process.env.NODE_ENV}`,
+});
+
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
@@ -15,7 +19,7 @@ module.exports = {
 			summary: `A Space to document my steady growth with code.`,
 		},
 		description: '',
-		siteUrl: `https://olhkyle.github.io`,
+		siteUrl: `https://olhkyle.github.io/`,
 		social: {
 			linkedin: `hyukmin-kwon`,
 		},
@@ -127,6 +131,25 @@ module.exports = {
 			resolve: 'gatsby-plugin-google-gtag',
 			options: {
 				trackingIds: ['G-5PK419H7M5'],
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-sitemap',
+			options: {
+				output: '/',
+			},
+		},
+		{
+			resolve: 'gatsby-plugin-robots-txt',
+			options: {
+				host: 'https://olhkyle.github,io/',
+				sitemap: 'https://olhkyle.github,io/sitemap-index.xml',
+				policy: [
+					{
+						userAgent: '*',
+						allow: '/',
+					},
+				],
 			},
 		},
 	],

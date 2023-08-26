@@ -17,6 +17,8 @@
     "gatsby-plugin-google-gtag": "^5.12.0",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-plugin-robots-txt": "^1.8.0",
+    "gatsby-plugin-sitemap": "^6.12.0",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-prismjs": "^7.11.0",
     "gatsby-remark-responsive-iframe": "^6.11.1",
@@ -27,6 +29,7 @@
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1"
   },
   "devDependencies": {

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import ScrollToTopButton from './ScrollToTopButton';
 import ThemeButton from './common/ThemeButton';
+import { Helmet } from 'react-helmet';
 
 const Layout = ({ location, title, children }) => {
 	const rootPath = `${__PATH_PREFIX__}/`;
@@ -31,6 +32,9 @@ const Layout = ({ location, title, children }) => {
 				{header}
 				<ThemeButton />
 			</header>
+			<Helmet>
+				<meta name="google-site-verification" content={process.env.GATSBY_GOOGLE_CONSOLE} />
+			</Helmet>
 			<main className="mb-[4rem]">{children}</main>
 			<footer className="border-t-2">
 				<div className="flex justify-between font-semibold relative">
