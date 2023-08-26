@@ -15,7 +15,7 @@ module.exports = {
 			summary: `A Space to document my steady growth with code.`,
 		},
 		description: '',
-		siteUrl: `https://kyledot.netlify.app/`,
+		siteUrl: `https://olhkyle.github.io`,
 		social: {
 			linkedin: `hyukmin-kwon`,
 		},
