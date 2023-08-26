@@ -119,7 +119,7 @@ module.exports = {
 				// https://css-tricks.com/meta-theme-color-and-trickery/
 				theme_color: `#3182f6`,
 				display: `minimal-ui`,
-				icon: `static/space-person.png`, // This path is relative to the root of the site.
+				icon: `src/images/space-person.png`, // This path is relative to the root of the site.
 				theme_color_in_head: false,
 			},
 		},
