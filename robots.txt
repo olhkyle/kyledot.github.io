@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://olhkyle.github.io/sitemap-0.xml
+Sitemap: https://olhkyle.github.io/sitemap-index.xml
 Host: https://olhkyle.github.io
