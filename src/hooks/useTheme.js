@@ -11,13 +11,13 @@ const useTheme = () => {
 
 	React.useEffect(() => {
 		document.body.dataset.theme = theme;
+		localStorage.setItem('theme', theme);
 	}, [theme]);
 
 	const toggleTheme = () => {
 		const darkQuery = theme === 'light' ? 'dark' : 'light';
 
 		setTheme(theme => darkQuery);
-		localStorage.setItem('theme', darkQuery);
 	};
 
 	return [theme, toggleTheme];
