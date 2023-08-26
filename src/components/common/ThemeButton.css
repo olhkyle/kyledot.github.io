@@ -1,0 +1,35 @@
+.container {
+	position: relative;
+	width: 52px;
+	height: 26px;
+	cursor: pointer;
+}
+
+.switch {
+	position: absolute;
+	top: 2px;
+	left: var(--position-left);
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	border-radius: 100%;
+	transition: left calc(var(--transition-duration) * 1s);
+}
+
+.btn-text {
+	display: flex;
+	height: 100%;
+	background-color: var(--btn-bg-color);
+	border-radius: 25px;
+	box-shadow: 2px 2px 5px 0 rgba(50, 50, 50, 0.25);
+	transition: background-color calc(var(--transition-duration) * 1s);
+}
+
+.btn-text-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	text-align: center;
+	color: #fff;
+}

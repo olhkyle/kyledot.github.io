@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.category {
+		@apply mb-0 py-1 px-4 text-sm text-black font-medium list-none rounded-xl border-[1px] bg-white shadow-lg shadow-gray-200/60 dark:bg-dark-primary dark:text-white cursor-pointer dark:border-gray-400 dark:shadow-gray-200/10;
+	}
+}

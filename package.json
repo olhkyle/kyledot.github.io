@@ -1,0 +1,54 @@
+{
+  "name": "kyledot",
+  "private": true,
+  "description": "Hyukmin Kwon's Blog",
+  "version": "0.1.0",
+  "author": "Hyukmin Kwon <kylekwon.dev@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/olhkyle/kyledot.blog/issues"
+  },
+  "dependencies": {
+    "@fontsource-variable/montserrat": "^5.0.4",
+    "@fontsource-variable/schibsted-grotesk": "^5.0.9",
+    "@fontsource/ibm-plex-mono": "^5.0.8",
+    "@fontsource/merriweather": "^5.0.3",
+    "gatsby": "^5.11.0",
+    "gatsby-plugin-feed": "^5.11.0",
+    "gatsby-plugin-google-gtag": "^5.12.0",
+    "gatsby-plugin-image": "^3.11.0",
+    "gatsby-plugin-manifest": "^5.11.0",
+    "gatsby-remark-images": "^7.11.0",
+    "gatsby-remark-prismjs": "^7.11.0",
+    "gatsby-remark-responsive-iframe": "^6.11.1",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-remark": "^6.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
+    "lodash": "^4.17.21",
+    "prismjs": "^1.29.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.10.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "gatsby-plugin-postcss": "^6.11.0",
+    "postcss": "^8.4.24",
+    "prettier": "^2.8.8",
+    "tailwindcss": "^3.3.2"
+  },
+  "homepage": "https://kyledot.netlify.app/",
+  "license": "0BSD",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}
