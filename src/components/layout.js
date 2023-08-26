@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import ScrollToTopButton from './ScrollToTopButton';
 import ThemeButton from './common/ThemeButton';
-import { Helmet } from 'react-helmet';
 
 const Layout = ({ location, title, children }) => {
 	const rootPath = `${__PATH_PREFIX__}/`;
