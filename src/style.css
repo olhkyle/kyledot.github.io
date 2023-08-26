@@ -125,6 +125,17 @@ body[data-theme='dark'] .header-link-home:hover {
 	color: var(--color-white);
 }
 
+/**  scrollbar reactive*/
+
+.hide-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera*/
+}
+
 /* HTML elements */
 
 *,

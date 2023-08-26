@@ -26,7 +26,7 @@ const BlogIndex = ({ data, location }) => {
 		<Layout location={location} title={siteTitle}>
 			<Bio />
 			<nav className="sticky top-1 left-0 mb-[3rem] z-10">
-				<ul role="tablist" id="category" className="flex gap-2 items-center m-0 p-2 w-full border-[1px] rounded-md border-gray-300 border-l-4 border-r-4 backdrop-blur overflow-x-scroll xs:bg-gray-100/40">
+				<ul role="tablist" id="category" className="hide-scrollbar flex gap-2 items-center m-0 p-2 w-full border-[1px] rounded-md border-gray-300 border-l-4 border-r-4 backdrop-blur overflow-x-scroll xs:bg-gray-100/40">
 					{categories.map(category => (
 						<li key={category} role="tab" aria-selected={currentCategory === category ? true : false} className={`category ${category === currentCategory ? 'border-blue-primary text-blue-primary font-bold dark:border-blue-primary dark:text-blue-primary' : 'border-gray-100'}`} onClick={updateCurrentCategory(category)}>
 							{category}
