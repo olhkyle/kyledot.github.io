@@ -32,9 +32,10 @@ const Layout = ({ location, title, children }) => {
 				{header}
 				<ThemeButton />
 			</header>
-			<Helmet>
+			{/* <Helmet>
 				<meta name="google-site-verification" content={process.env.GATSBY_GOOGLE_CONSOLE} />
-			</Helmet>
+			</Helmet> */}
+			<meta name="google-site-verification" content="QqtJyrtBQngvT--l7EEiKSi6MQp1_qz1s_3gzHqiIRk" />
 			<main className="mb-[4rem]">{children}</main>
 			<footer className="border-t-2">
 				<div className="flex justify-between font-semibold relative">
