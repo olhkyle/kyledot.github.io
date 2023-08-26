@@ -34,7 +34,7 @@ const Bio = () => {
 	return (
 		<div className="bio">
 			<div className="flex gap-2">
-				<StaticImage className="bio-avatar" layout="fixed" formats={['auto', 'webp', 'avif']} src="/static/space-person.png" width={50} height={50} quality={95} alt="Profile picture" />
+				<StaticImage className="bio-avatar" layout="fixed" formats={['auto', 'webp', 'avif']} src="../images/space-person.png" width={50} height={50} quality={95} alt="Profile picture" />
 				{author?.name && (
 					<div className="flex flex-col gap-1">
 						<p className="font-semibold tracking-tight sm:tracking-normal">
