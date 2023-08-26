@@ -40,12 +40,14 @@ const Layout = ({ location, title, children }) => {
 				<div className="flex justify-between font-semibold relative">
 					<div className="text-sm text-gray-400"> © 2023 Hyukmin Kwon.</div>
 					<div className="flex gap-4 text-sm">
-						<a href="https://github.com/olhkyle" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-white underline-offset-4 hover:underline hover:text-blue-primary cursor-pointer">
+						<a href="https://github.com/olhkyle" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-white underline-offset-4 underline hover:text-blue-primary cursor-pointer">
 							Github
 						</a>
-
-						<a href="https://olhkyle.me" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-white underline-offset-4 hover:underline hover:text-blue-primary cursor-pointer">
+						<a href="https://olhkyle.me" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-white underline-offset-4 underline hover:text-blue-primary cursor-pointer">
 							Olhkyle.me
+						</a>
+						<a href="https://olhkyle.github.io/rss.xml" target="_blank" rel="noreferrer" className="text-blue-primary dark:text-white underline-offset-4 underline hover:text-blue-primary cursor-pointer">
+							rss
 						</a>
 					</div>
 					<ScrollToTopButton />

@@ -142,8 +142,8 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-robots-txt',
 			options: {
-				host: 'https://olhkyle.github,io/',
-				sitemap: 'https://olhkyle.github,io/sitemap-index.xml',
+				host: 'https://olhkyle.github.io/',
+				sitemap: 'https://olhkyle.github.io/sitemap-0.xml',
 				policy: [
 					{
 						userAgent: '*',
