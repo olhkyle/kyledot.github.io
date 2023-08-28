@@ -262,6 +262,11 @@ li > p {
 	margin-bottom: calc(var(--spacing-8) / 2);
 }
 
+p > a {
+	color: var(--color-primary);
+	font-weight: 600;
+}
+
 li a {
 	font-weight: 400;
 	color: var(--color-text-medium);
