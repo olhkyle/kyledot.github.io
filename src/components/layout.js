@@ -25,21 +25,23 @@ const Layout = ({ location, title, children }) => {
 		);
 	}
 
-	window.addEventListener('copy', e => {
-		alert(`Don't allow copy because of security policy`);
-		e.preventDefault();
+	if (typeof window !== 'undefined') {
+		window.addEventListener('copy', e => {
+			alert(`Don't allow copy because of security policy`);
+			e.preventDefault();
 
-		e.clipboardData.clearData('Text');
-	});
+			e.clipboardData.clearData('Text');
+		});
 
-	document.addEventListener('contextmenu', e => {
-		return e.preventDefault();
-	});
+		document.addEventListener('contextmenu', e => {
+			return e.preventDefault();
+		});
 
-	document.addEventListener('keydown', e => {
-		e.preventDefault();
-		e.returnValue = false;
-	});
+		document.addEventListener('keydown', e => {
+			e.preventDefault();
+			e.returnValue = false;
+		});
+	}
 
 	return (
 		<div className="global-wrapper" data-is-root-path={isRootPath}>
