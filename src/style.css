@@ -525,6 +525,7 @@ b > a {
 }
 
 /* Inline code */
+section > h2 > code.language-text,
 section > h3 > code.language-text {
 	border-radius: 0.3em;
 	background: rgba(175, 184, 193, 0.2) !important;
