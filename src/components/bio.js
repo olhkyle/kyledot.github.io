@@ -56,7 +56,7 @@ const Bio = () => {
 					Olhkyle.me
 				</a>
 				<span className="text-sm">|</span>
-				<a href="https://smooth-rain-4fc.notion.site/fb408faa5bfc4e3292dc9d25a2a50211?pvs=4" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
+				<a href="https://docs.google.com/document/d/1VLqvErvhdaCUYrcBTDzM1e3vHeHHkCJBTDW0hNYoGw4/edit?usp=sharing" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
 					Resume(Korean)
 				</a>
 				<span className="text-sm">|</span>
