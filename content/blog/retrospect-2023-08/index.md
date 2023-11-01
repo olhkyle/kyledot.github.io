@@ -2,7 +2,7 @@
 title: Deploy 2023.01-08
 date: '2023-08-28'
 description: '2023년 1월부터 8월까지 개발하면서 느낀 점이나 경험, 그리고 개인적인 생각들을 정리하였습니다.'
-category: 'Retrospect'
+category: 'Essay'
 ---
 
 ## 8개월간 무엇을 했는가
