@@ -15,7 +15,7 @@ category: 'Retrospect'
 
 ## 1. A quick wrap-up of the project / 프로젝트를 마무리한 간단한 후기
 
-As our second team project, I'm proud to say that we've built a larger-than-expected project, first as a mock-server using `Express.js` and then as a deployment using `FireBase`.
+As second team project, I'm proud to say that we've built a larger-than-expected project, first as a mock-server using `Express.js` and then as a deployment using `FireBase`.
 
 2번째 팀 프로젝트로, 생각보다 규모 있는 프로젝트를 처음에 `Express.js`를 활용하여 mock-server로 구현한 후에, `FireBase`를 활용해서 배포까지 진행한 것에 대해 뿌듯하게 생각합니다.
 
