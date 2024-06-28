@@ -52,8 +52,8 @@ const Bio = () => {
 					Github
 				</a>
 				<span className="text-sm">|</span>
-				<a href="https://olhkyle.me" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
-					Olhkyle.me
+				<a href="https://lazykyle.me" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
+					lazykyle.me
 				</a>
 				<span className="text-sm">|</span>
 				<a href="https://docs.google.com/document/d/1VLqvErvhdaCUYrcBTDzM1e3vHeHHkCJBTDW0hNYoGw4/edit?usp=sharing" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
