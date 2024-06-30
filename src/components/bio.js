@@ -57,11 +57,11 @@ const Bio = () => {
 				</a>
 				<span className="text-sm">|</span>
 				<a href="https://docs.google.com/document/d/1VLqvErvhdaCUYrcBTDzM1e3vHeHHkCJBTDW0hNYoGw4/edit?usp=sharing" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
-					Resume(Korean)
+					Resume(KOR)
 				</a>
 				<span className="text-sm">|</span>
 				<a href="https://docs.google.com/document/d/1pFxuhsGGJLaQ1n5ej11ng0ZiKNXoXbjromNNKl40mJc/edit" target="_blank" rel="noreferrer" className="text-blue-primary font-semibold font-medium underline-offset-4 hover:underline text-sm">
-					Resume(English)
+					Resume(ENG)
 				</a>
 			</div>
 		</div>

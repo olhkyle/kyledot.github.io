@@ -58,7 +58,7 @@ const Layout = ({ location, title, children }) => {
 							Github
 						</a>
 						<a href="https://olhkyle.me" target="_blank" rel="noreferrer" className="text-gray-500 dark:text-white underline-offset-4 underline hover:text-blue-primary cursor-pointer">
-							Olhkyle.me
+							lazykyle.me
 						</a>
 						<a href="https://olhkyle.github.io/rss.xml" target="_blank" rel="noreferrer" className="text-blue-primary dark:text-white underline-offset-4 underline hover:text-blue-primary cursor-pointer">
 							rss

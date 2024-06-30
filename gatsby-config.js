@@ -13,7 +13,7 @@ require('dotenv').config({
  */
 module.exports = {
 	siteMetadata: {
-		title: `Kyle.dot`,
+		title: `KYLE.`,
 		author: {
 			name: `Hyukmin Kwon`,
 			summary: `A Space to document my steady growth with code.`,
